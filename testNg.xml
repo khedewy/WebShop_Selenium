@@ -1,0 +1,96 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Suite">
+    <parameter name="browser" value="firefox" />
+    <test name="Regression Test in chrome">
+        <classes>
+            <class name="tests.AddToCartTest">
+                <methods>
+                    <include name="searchForProducts"/>
+                    <include name="addFirstProductToCart"/>
+                    <include name="searchForSecondProduct"/>
+                    <include name="addSecondProductToCart"/>
+                </methods>
+            </class>
+            <class name="tests.AddToCompareTest">
+                <methods>
+                    <include name="HoverOverCellPhones"/>
+                    <include name="goToChosenProductPage"/>
+                    <include name="addToCompareList"/>
+                </methods>
+            </class>
+            <class name="tests.AddToWishlistTest">
+                <methods>
+                    <include name="HoverOverCellPhones"/>
+                    <include name="goToChosenProductPage"/>
+                    <include name="addProductToWishList"/>
+                </methods>
+            </class>
+            <class name="tests.CheckoutTest">
+                <methods>
+                    <include name="searchForProducts"/>
+                    <include name="addFirstProductToCart"/>
+                    <include name="searchForSecondProduct"/>
+                    <include name="addSecondProductToCart"/>
+                    <include name="agreeOnServices"/>
+                    <include name="navigateToCheckout"/>
+                    <include name="enterAddressData"/>
+                    <include name="navigateToShipping"/>
+                    <include name="navigateToShippingMethode"/>
+                    <include name="navigateToShippingPayment"/>
+                    <include name="navigateToPaymentInformation"/>
+                    <include name="confirmOrder"/>
+                </methods>
+            </class>
+            <class name="tests.ContactUsTest">
+                <methods>
+                    <include name="navigateToContactUs"/>
+                    <include name="contactUs"/>
+                </methods>
+            </class>
+            <class name="tests.EmailToFriendTest">
+                <methods>
+                    <include name="validateTitlePage"/>
+                    <include name="navigateToRegister"/>
+                    <include name="completeRegister"/>
+                    <include name="HoverOverCellPhones"/>
+                    <include name="goToChosenProductPage"/>
+                    <include name="goToEmailFriendPage"/>
+                    <include name="sendEmailToFriend"/>
+                </methods>
+            </class>
+            <class name="tests.HoverOverComputersTest">
+                <methods>
+                    <include name="HoverOverDesktops"/>
+                    <include name="HoverOverNotebooks"/>
+                </methods>
+            </class>
+            <class name="tests.HoverOverElectronicsTest">
+                <methods>
+                    <include name="HoverOverCameras"/>
+                    <include name="HoverOverCellPhones"/>
+                </methods>
+            </class>
+            <class name="tests.LoginTest">
+                <methods>
+                    <include name="validateTitlePage"/>
+                    <include name="navigateToRegister"/>
+                    <include name="completeRegister"/>
+                    <include name="logOut"/>
+                    <include name="Login"/>
+                </methods>
+            </class>
+            <class name="tests.RegisterTest">
+                <methods>
+                    <include name="validateTitlePage"/>
+                    <include name="navigateToRegister"/>
+                    <include name="completeRegister"/>
+                </methods>
+            </class>
+            <class name="tests.SearchTest">
+                <methods>
+                    <include name="searchForProducts"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

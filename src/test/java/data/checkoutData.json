@@ -1,0 +1,15 @@
+[
+  {
+    "firstName": "mahmoud",
+    "lastName": "khedewy",
+    "email" : "mahmoud09@gmail.com",
+    "company": "Microsoft",
+    "country" : "Egypt",
+    "city": "Sohag",
+    "address1":"Egypt",
+    "address2": "Maragha",
+    "zip": "123",
+    "phone": "0961231",
+    "fax": "3422"
+  }
+]
